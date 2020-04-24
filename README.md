@@ -148,6 +148,14 @@ Additionally, this paper uses Average Pooling instead of Fully connected layer a
 
 ![](https://github.com/liferlisiqi/Traffic-Sign-Classifier/blob/master/result_images/GoogLeNet.png)
 
+Why come up inception? In an image classification tasks, the size of salient feature can considerably vary within the image frame. Hence, deciding on a fixed kernel size is rather difficult. Large kernels are preferred for more global features that are distributed over large area of the image, on the other hand, smaller kernels provide good resluts in detecting area specific features that are distributed across the image frame. So for more effective, we need kernels of diifferent sizes. 
+
+That is what is **inception** does. Instead of simply going deeper in terms of number of layers, it goes wider. 
+
+The classic GoogLeNet will cost a bit of computional power, so in the this implementation, the No. of layers from 22 to 14. 
+
+### Model details
+
 
 
 ## Summary 
