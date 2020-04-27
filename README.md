@@ -156,6 +156,41 @@ The classic GoogLeNet will cost a bit of computional power, so in the this imple
 
 ### Model details
 
+| Type          | Kernel/Stride	| Output    | Parameters  |
+|:-------------:|:-------------:|:---------:|:-----------:|
+| conv          | 3x3/2x2       | 16x16x64  | 1,792       |
+| inception(2a) |               | 16x16x256 | 137,072     |
+| inception(2b)	|               | 16x16x480 | 388,736     |
+| max pool    	| 3x3/2x2      	| 7x7x480   |             |
+| inception(3a) |  	            | 7x7x512   | 433,792     |
+| inception(3a) |  	            | 7x7x512   | 449,160     |
+| max pool 	    | 3x3/2x2  	    | 3x3x512   |             |
+| inception(4a) |  	            | 3x3x832   | 859,136     |
+| inception(4a) |  	            | 3x3x1024  | 1,444,080   |
+| avg pool 	    | 3x3/1x1  	    | 1x1x1024  |             |
+| flatten	    | 864			| 1024      |             |
+| full		    | 43            | 43        | 44,032      |
+|**inception**  |               |           |             |
+| conv11        | 1x1/1x1       |           |             |
+| conv33_reduce | 1x1/1x1       |           |             |
+| conv33        | 3x3/1x1       |           |             |
+| conv55_reduce | 1x1/1x1       |           |             |
+| conv55        | 5x5/1x1       |           |             |
+| pool_proj     | 3x3/1x1       |           |             |
+| pool11        | 1x1/1x1       |           |             |
+
+### I have turned the following three hyperparameters to train my model.
+
+LEARNING_RATE = 5e-4
+EPOCHS = 35
+BATCH_SIZE = 128
+keep_prop = 0.5
+The results are:
+
+accuracy of training set: 100.0%
+accuracy of validation set: 98.5%
+accuracy of test set: 98.1%
+
 
 
 ## Summary 
