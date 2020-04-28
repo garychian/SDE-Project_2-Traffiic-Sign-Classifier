@@ -188,8 +188,8 @@ keep_prop = 0.5
 The results are:
 
 accuracy of training set: 100.0%
-accuracy of validation set: 98.5%
-accuracy of test set: 98.1%
+accuracy of validation set: 98.7%
+accuracy of test set: 97.9%
 
 
 
