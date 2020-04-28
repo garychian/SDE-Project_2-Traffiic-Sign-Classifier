@@ -195,3 +195,7 @@ accuracy of test set: 98.1%
 
 ## Summary 
 AlexNet: was born out of need to imorove the results of ImageNet challenge. At 2012, AlexNet achieve considerable accuracy of 84.7% on competition. AlexNet use *ReLU* activation function which sloved the **Vanishing Gradient** problem. And also achieved 25% error rate about 6 times faster than the same network with *tanh* non linearity. 
+
+GoogLeNet: was the competition winner in 2014, ![](https://github.com/garychian/SDE-Project_2-Traffiic-Sign-Classifier/blob/master/image/GoogLeNet.jpg)
+
+From the above image we can see, GoogLeNet saved a lot of operations and help to reduce the overfitting problem. 
